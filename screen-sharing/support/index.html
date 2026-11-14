@@ -2,132 +2,13 @@
 <html lang="ko">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>화면 공유 지원 | TeamEntry</title>
-  <meta name="description" content="화면 공유 앱을 시작하는 법과 자주 묻는 질문, 문의처입니다.">
-  <link rel="alternate" hreflang="en" href="/en/screen-sharing/support/">
-  <link rel="icon" href="/screen-sharing/images/icon.png">
-  <link rel="stylesheet" href="/assets/styles/tokens.css">
-  <link rel="stylesheet" href="/assets/styles/base.css">
-  <link rel="stylesheet" href="/assets/styles/layout.css">
-  <link rel="stylesheet" href="/assets/styles/components.css">
-  <script type="module" src="/assets/scripts/main.js"></script>
+  <title>Screen Anywhere | TeamEntry</title>
+  <meta name="robots" content="noindex">
+  <link rel="canonical" href="https://teamentry.github.io/screen-anywhere/support/">
+  <meta http-equiv="refresh" content="0; url=/screen-anywhere/support/">
+  <script>location.replace("/screen-anywhere/support/" + location.search + location.hash);</script>
 </head>
 <body>
-  <site-header app="screen-sharing" page="support"></site-header>
-
-  <main class="article container container--narrow">
-    <h1 class="article__title">화면 공유 지원</h1>
-    <p class="article__meta">시작하는 법, 자주 묻는 질문, 문의</p>
-
-    <section class="contact-card" aria-labelledby="contact-title">
-      <div>
-        <h2 id="contact-title" class="contact-card__title">문의</h2>
-        <p class="contact-card__description">오류나 궁금한 점은 메일로 보내 주세요.</p>
-      </div>
-      <a class="button" href="mailto:lgw9898@naver.com?subject=%5B%ED%99%94%EB%A9%B4%20%EA%B3%B5%EC%9C%A0%5D">
-        lgw9898@naver.com
-      </a>
-    </section>
-
-    <h2>시작하기</h2>
-    <ol>
-      <li>보여 줄 Mac에 화면 공유 Mac 앱을 설치하고 엽니다.</li>
-      <li>
-        Mac의 <strong>시스템 설정 &gt; 개인정보 보호 및 보안</strong>에서
-        <strong>화면 및 시스템 오디오 녹음</strong>과 <strong>손쉬운 사용</strong>을 허용합니다.
-      </li>
-      <li>
-        두 기기를 같은 <a href="https://tailscale.com">Tailscale</a> 네트워크에 연결합니다.
-        같은 Wi-Fi에서만 쓴다면 Mac 앱 설정에서 <strong>같은 네트워크 연결 받기</strong>를 켭니다.
-      </li>
-      <li>Mac 메뉴 막대에서 <strong>기기 추가</strong>를 눌러 QR을 띄우고, iPhone이나 iPad 앱으로 찍어 페어링합니다.</li>
-      <li>다음부터는 목록에서 Mac을 누르고 Face ID로 확인하면 연결됩니다.</li>
-    </ol>
-    <p>Mac이 없어도 앱 첫 화면의 <strong>데모 Mac으로 둘러보기</strong>로 모든 조작을 해 볼 수 있습니다.</p>
-
-    <h2>자주 묻는 질문</h2>
-    <div class="faq">
-      <details class="faq__item">
-        <summary class="faq__question">iPhone에서 Mac에 연결되지 않습니다</summary>
-        <div class="faq__answer">
-          <p>다음을 차례로 확인해 주세요.</p>
-          <ul>
-            <li>Mac이 잠자기 상태가 아니고, Mac 메뉴 막대의 상태가 <strong>대기 중</strong>인지</li>
-            <li>Tailscale로 연결한다면 두 기기의 Tailscale이 켜져 있고 같은 계정으로 로그인했는지</li>
-            <li>Tailscale ACL을 직접 정했다면 Mac의 UDP 47100 포트를 허용했는지</li>
-            <li>
-              같은 Wi-Fi로 연결한다면 <strong>같은 네트워크 연결 받기</strong>가 켜져 있고,
-              <strong>페어링한 기기</strong>에서 이 기기의 <strong>같은 네트워크</strong> 스위치가 켜져 있는지
-            </li>
-          </ul>
-        </div>
-      </details>
-
-      <details class="faq__item">
-        <summary class="faq__question">Tailscale이 꼭 있어야 하나요?</summary>
-        <div class="faq__answer">
-          <p>
-            같은 Wi-Fi에서만 쓴다면 없어도 됩니다. Mac에서 <strong>같은 네트워크 연결 받기</strong>를 켜면
-            Tailscale 없이 페어링하고 연결합니다. 다른 네트워크에서 Mac을 보려면 Tailscale이 필요합니다.
-          </p>
-        </div>
-      </details>
-
-      <details class="faq__item">
-        <summary class="faq__question">화면은 보이는데 클릭과 입력이 되지 않습니다</summary>
-        <div class="faq__answer">
-          <p>
-            Mac의 <strong>시스템 설정 &gt; 개인정보 보호 및 보안 &gt; 손쉬운 사용</strong>에서 화면 공유가 켜져 있는지 확인해 주세요.
-            켜져 있는데도 되지 않으면 스위치를 껐다가 켠 뒤 Mac 앱을 다시 엽니다.
-          </p>
-        </div>
-      </details>
-
-      <details class="faq__item">
-        <summary class="faq__question">인증서 지문이 다르다는 경고가 뜹니다</summary>
-        <div class="faq__answer">
-          <p>
-            Mac의 서버 키가 바뀌었거나 다른 Mac이 같은 주소를 쓰고 있을 때 뜹니다.
-            본인 Mac이 맞다면 iPhone에서 그 Mac을 지운 뒤 다시 페어링해 주세요.
-          </p>
-        </div>
-      </details>
-
-      <details class="faq__item">
-        <summary class="faq__question">셀룰러 데이터는 얼마나 쓰나요?</summary>
-        <div class="faq__answer">
-          <p>
-            설정의 화질 선택지마다 1시간에 드는 어림 데이터 양이 나옵니다.
-            기본값인 자동은 셀룰러와 저데이터 모드에서 해상도와 초당 장수를 줄입니다.
-            같은 Wi-Fi에서는 요금제 데이터를 쓰지 않습니다.
-          </p>
-        </div>
-      </details>
-
-      <details class="faq__item">
-        <summary class="faq__question">내 화면이 다른 곳에 저장되나요?</summary>
-        <div class="faq__answer">
-          <p>
-            저장되지 않습니다. 화면과 입력은 내 Mac과 내 기기 사이에서만 암호화되어 오가고, TeamEntry의 서버를 거치지 않습니다.
-            자세한 내용은 <a href="/screen-sharing/privacy/">개인정보 처리방침</a>에 있습니다.
-          </p>
-        </div>
-      </details>
-
-      <details class="faq__item">
-        <summary class="faq__question">페어링한 기기를 끊거나 지우려면 어떻게 하나요?</summary>
-        <div class="faq__answer">
-          <p>
-            Mac 메뉴 막대에서 지금 보고 있는 기기를 <strong>끊기</strong>나 <strong>모두 끊기</strong>로 끊습니다.
-            <strong>페어링한 기기</strong>에서 <strong>페어링 지우기</strong>를 누르면 그 기기의 연결이 바로 끊깁니다.
-            iPhone이나 iPad에서는 그 Mac의 <strong>이 컴퓨터 지우기</strong>로 지웁니다.
-          </p>
-        </div>
-      </details>
-    </div>
-  </main>
-
-  <site-footer app="screen-sharing"></site-footer>
+  <p><a href="/screen-anywhere/support/">/screen-anywhere/support/</a></p>
 </body>
 </html>
