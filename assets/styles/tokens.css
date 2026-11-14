@@ -1,0 +1,43 @@
+:root {
+  --color-background: #ffffff;
+  --color-background-subtle: #f5f5f7;
+  --color-text: #1d1d1f;
+  --color-text-body: #3a3a3c;
+  --color-text-secondary: #6e6e73;
+  --color-text-tertiary: #86868b;
+  --color-border: #e5e5ea;
+  --color-accent: #1f6bfa;
+  --color-accent-pressed: #1857d1;
+  --gradient-accent: linear-gradient(90deg, #1f6bfa, #7a5cff 60%, #c04ff5);
+
+  --font-family-base: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Apple SD Gothic Neo",
+    "Pretendard", "Helvetica Neue", "Noto Sans KR", sans-serif;
+  --font-size-caption: 13px;
+  --font-size-body: 17px;
+  --font-size-body-large: 19px;
+  --font-size-title: clamp(28px, 3.6vw, 40px);
+  --font-size-headline: clamp(34px, 5.5vw, 56px);
+  --font-size-display: clamp(44px, 8vw, 88px);
+  --font-size-lead: clamp(19px, 2.4vw, 24px);
+
+  --content-width: 1080px;
+  --text-width: 720px;
+  --page-gutter: 22px;
+  --header-height: 52px;
+  --section-spacing: 112px;
+
+  --radius-small: 6px;
+  --radius-medium: 16px;
+  --radius-large: 18px;
+  --radius-icon: 22px;
+  --radius-pill: 980px;
+
+  --duration-reveal: 0.8s;
+}
+
+@media (max-width: 760px) {
+  :root {
+    --page-gutter: 16px;
+    --section-spacing: 72px;
+  }
+}
