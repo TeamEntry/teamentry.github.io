@@ -1,0 +1,119 @@
+site-header {
+  display: block;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  height: var(--header-height);
+  border-bottom: 1px solid var(--color-border);
+  background: var(--color-background-translucent);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+
+.site-header__inner {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  height: 100%;
+}
+
+.site-header__brand {
+  color: var(--color-text);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.site-header__app {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--color-text);
+  font-size: 15px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.site-header__app img {
+  border-radius: var(--radius-small);
+}
+
+.site-header__brand:hover,
+.site-header__app:hover,
+.site-header__link:hover {
+  text-decoration: none;
+}
+
+.site-header__nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-left: auto;
+  font-size: var(--font-size-caption);
+}
+
+.site-header__link {
+  color: var(--color-text-secondary);
+}
+
+.site-header__link:hover,
+.site-header__link[aria-current="page"] {
+  color: var(--color-text);
+}
+
+.locale-switch {
+  padding: 3px 10px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-pill);
+  color: var(--color-text-secondary);
+  font-size: 12px;
+}
+
+.locale-switch:hover {
+  border-color: var(--color-text-tertiary);
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+site-footer {
+  display: block;
+  padding: 24px 0 40px;
+  border-top: 1px solid var(--color-border);
+  background: var(--color-background-subtle);
+  color: var(--color-text-tertiary);
+  font-size: 12px;
+}
+
+.site-footer__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 8px 24px;
+}
+
+.site-footer__copyright {
+  margin: 0;
+}
+
+.site-footer__nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+}
+
+.site-footer__nav a {
+  color: var(--color-text-secondary);
+}
+
+@media (max-width: 760px) {
+  .site-header__inner {
+    gap: 12px;
+  }
+
+  .site-header__nav {
+    gap: 14px;
+  }
+
+  .is-hidden-on-compact {
+    display: none;
+  }
+}
