@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>화면 공유 개인정보 처리방침 | TeamEntry</title>
+  <meta name="description" content="화면 공유 앱의 개인정보 처리방침입니다.">
+  <link rel="alternate" hreflang="en" href="/en/screen-sharing/privacy/">
+  <link rel="icon" href="/screen-sharing/images/icon.png">
+  <link rel="stylesheet" href="/assets/styles/tokens.css">
+  <link rel="stylesheet" href="/assets/styles/base.css">
+  <link rel="stylesheet" href="/assets/styles/layout.css">
+  <link rel="stylesheet" href="/assets/styles/components.css">
+  <script type="module" src="/assets/scripts/main.js"></script>
+</head>
+<body>
+  <site-header app="screen-sharing" page="privacy"></site-header>
+
+  <main class="article container container--narrow">
+    <h1 class="article__title">개인정보 처리방침</h1>
+    <p class="article__meta">화면 공유 iPhone, iPad, Mac 앱에 적용합니다. 시행일은 2026년 11월 14일입니다.</p>
+
+    <div class="callout">
+      <ul>
+        <li>TeamEntry는 이 앱으로 개인정보를 수집하지 않습니다.</li>
+        <li>계정, 광고, 분석 도구, 추적이 없습니다.</li>
+        <li>화면과 입력은 내 Mac과 내 기기 사이에서만 암호화되어 오가고, TeamEntry의 서버를 거치거나 저장되지 않습니다.</li>
+      </ul>
+    </div>
+
+    <h2>1. 처리하는 정보</h2>
+    <h3>화면, 입력, 터미널</h3>
+    <p>
+      Mac 화면 영상, 터치와 키보드 입력, 터미널 내용은 사용자가 페어링한 Mac과 기기 사이에서 직접 오갑니다.
+      연결은 Tailscale 네트워크나 사용자가 허용한 같은 로컬 네트워크를 쓰고, QUIC 위 TLS 1.3으로 암호화합니다.
+      TeamEntry는 이 내용을 받거나 저장하지 않습니다.
+    </p>
+
+    <h3>기기 안에만 저장하는 정보</h3>
+    <p>앱은 동작에 필요한 다음 정보를 사용자의 기기 안에만 저장합니다. 앱을 지우면 함께 지워집니다.</p>
+    <ul>
+      <li>페어링한 Mac과 기기의 목록, 이름, 인증서 지문</li>
+      <li>Secure Enclave에서 만든 기기 키와 Mac의 서버 인증서. 둘 다 키체인에 있고 기기 밖으로 꺼낼 수 없습니다.</li>
+      <li>화질과 네트워크 같은 앱 설정</li>
+      <li>날짜별 Wi-Fi와 셀룰러 데이터 사용량</li>
+      <li>안내 탭의 AI 질문 대화</li>
+    </ul>
+
+    <h3>AI 질문</h3>
+    <p>안내 탭의 AI 질문은 이 기기의 Apple Intelligence가 기기 안에서 답을 만듭니다. 질문과 답은 TeamEntry로 보내지 않습니다.</p>
+
+    <h2>2. 앱이 요청하는 권한</h2>
+    <ul>
+      <li>카메라(iPhone, iPad): Mac 화면의 페어링 QR을 찍을 때만 씁니다. 찍은 화면은 저장하거나 보내지 않습니다.</li>
+      <li>Face ID(iPhone, iPad): 연결할 때마다 본인을 확인한 뒤 기기 키를 씁니다. 앱은 확인 결과만 받습니다.</li>
+      <li>로컬 네트워크: 같은 Wi-Fi에 있는 Mac과 기기를 찾아 연결합니다.</li>
+      <li>화면 및 시스템 오디오 녹음(Mac): 페어링한 기기로 화면을 보냅니다.</li>
+      <li>손쉬운 사용(Mac): 페어링한 기기의 터치와 키보드 입력을 Mac에 넣습니다.</li>
+    </ul>
+    <p>권한은 기기 설정에서 언제든 끌 수 있습니다. 끄면 그 권한을 쓰는 기능만 멈춥니다.</p>
+
+    <h2>3. 제3자 서비스</h2>
+    <p>앱에는 광고, 분석, 오류 수집을 위한 제3자 SDK가 없습니다.</p>
+    <ul>
+      <li>
+        Tailscale은 사용자가 직접 설치하고 로그인하는 별도 서비스입니다.
+        Tailscale이 처리하는 정보에는 <a href="https://tailscale.com/privacy-policy">Tailscale 개인정보 처리방침</a>이 적용됩니다.
+      </li>
+      <li>
+        App Store 다운로드와 사용자가 공유에 동의한 충돌 보고는 Apple이 처리하며
+        <a href="https://www.apple.com/legal/privacy/">Apple 개인정보 처리방침</a>을 따릅니다.
+        TeamEntry는 Apple이 주는 익명 통계만 봅니다.
+      </li>
+    </ul>
+
+    <h2>4. 보관과 삭제</h2>
+    <p>
+      TeamEntry가 보관하는 사용자 정보는 없습니다.
+      기기 안의 정보는 앱에서 Mac이나 대화를 지우거나, 앱을 삭제하면 지워집니다.
+    </p>
+
+    <h2>5. 아동의 개인정보</h2>
+    <p>앱은 만 14세 미만 아동을 포함해 누구의 개인정보도 수집하지 않습니다.</p>
+
+    <h2>6. 방침 변경</h2>
+    <p>
+      이 방침을 바꾸면 이 페이지에 새 시행일과 함께 올립니다.
+      정보를 다루는 방식이 바뀌면 앱 업데이트 설명에도 적습니다.
+    </p>
+
+    <h2>7. 문의</h2>
+    <p>
+      개인정보에 관한 문의는
+      <a href="mailto:lgw9898@naver.com?subject=%5B%ED%99%94%EB%A9%B4%20%EA%B3%B5%EC%9C%A0%5D%20%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4">lgw9898@naver.com</a>으로
+      보내 주세요.
+    </p>
+  </main>
+
+  <site-footer app="screen-sharing"></site-footer>
+</body>
+</html>
