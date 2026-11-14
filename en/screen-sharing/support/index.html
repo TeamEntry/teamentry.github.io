@@ -2,131 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Screen Sharing Support | TeamEntry</title>
-  <meta name="description" content="Getting started with Screen Sharing, frequently asked questions and contact.">
-  <link rel="alternate" hreflang="ko" href="/screen-sharing/support/">
-  <link rel="icon" href="/screen-sharing/images/icon.png">
-  <link rel="stylesheet" href="/assets/styles/tokens.css">
-  <link rel="stylesheet" href="/assets/styles/base.css">
-  <link rel="stylesheet" href="/assets/styles/layout.css">
-  <link rel="stylesheet" href="/assets/styles/components.css">
-  <script type="module" src="/assets/scripts/main.js"></script>
+  <title>Screen Anywhere | TeamEntry</title>
+  <meta name="robots" content="noindex">
+  <link rel="canonical" href="https://teamentry.github.io/en/screen-anywhere/support/">
+  <meta http-equiv="refresh" content="0; url=/en/screen-anywhere/support/">
+  <script>location.replace("/en/screen-anywhere/support/" + location.search + location.hash);</script>
 </head>
 <body>
-  <site-header app="screen-sharing" page="support"></site-header>
-
-  <main class="article container container--narrow">
-    <h1 class="article__title">Screen Sharing Support</h1>
-    <p class="article__meta">Getting started, FAQ and contact</p>
-
-    <section class="contact-card" aria-labelledby="contact-title">
-      <div>
-        <h2 id="contact-title" class="contact-card__title">Contact</h2>
-        <p class="contact-card__description">Email us about bugs or questions.</p>
-      </div>
-      <a class="button" href="mailto:lgw9898@naver.com?subject=%5BScreen%20Sharing%5D">lgw9898@naver.com</a>
-    </section>
-
-    <h2>Getting started</h2>
-    <ol>
-      <li>Install and open the Screen Sharing Mac app on the Mac you want to see.</li>
-      <li>
-        On the Mac, open <strong>System Settings &gt; Privacy &amp; Security</strong> and allow
-        <strong>Screen &amp; System Audio Recording</strong> and <strong>Accessibility</strong>.
-      </li>
-      <li>
-        Connect both devices to the same <a href="https://tailscale.com">Tailscale</a> network.
-        If you only use the same Wi-Fi, turn on <strong>Accept local network connections</strong> in the Mac app's settings.
-      </li>
-      <li>Click <strong>Add Device</strong> in the Mac menu bar to show a QR code, then scan it with the iPhone or iPad app to pair.</li>
-      <li>From then on, tap your Mac in the list and confirm with Face ID.</li>
-    </ol>
-    <p>No Mac nearby? Tap <strong>Explore with a Demo Mac</strong> on the first screen to try every control.</p>
-
-    <h2>Frequently asked questions</h2>
-    <div class="faq">
-      <details class="faq__item">
-        <summary class="faq__question">My iPhone can't connect to my Mac</summary>
-        <div class="faq__answer">
-          <p>Please check the following in order.</p>
-          <ul>
-            <li>The Mac is awake and its menu bar status shows <strong>Waiting</strong></li>
-            <li>If you use Tailscale, it's on for both devices and both are signed in to the same account</li>
-            <li>If you set your own Tailscale ACLs, UDP port 47100 on the Mac is allowed</li>
-            <li>
-              If you connect over Wi-Fi, <strong>Accept local network connections</strong> is on and this device's
-              <strong>Local network</strong> switch is on in <strong>Paired devices</strong>
-            </li>
-          </ul>
-        </div>
-      </details>
-
-      <details class="faq__item">
-        <summary class="faq__question">Do I need Tailscale?</summary>
-        <div class="faq__answer">
-          <p>
-            Not if you only use the same Wi-Fi. With <strong>Accept local network connections</strong> on,
-            you can pair and connect without Tailscale. To reach your Mac from another network, you need Tailscale.
-          </p>
-        </div>
-      </details>
-
-      <details class="faq__item">
-        <summary class="faq__question">I can see the screen, but clicks and typing don't work</summary>
-        <div class="faq__answer">
-          <p>
-            On the Mac, check that Screen Sharing is on in
-            <strong>System Settings &gt; Privacy &amp; Security &gt; Accessibility</strong>.
-            If it already is, turn the switch off and on again, then reopen the Mac app.
-          </p>
-        </div>
-      </details>
-
-      <details class="faq__item">
-        <summary class="faq__question">I see a warning that the certificate fingerprint changed</summary>
-        <div class="faq__answer">
-          <p>
-            This appears when the Mac's server key changed or another Mac is using the same address.
-            If it's your Mac, remove it on your iPhone and pair again.
-          </p>
-        </div>
-      </details>
-
-      <details class="faq__item">
-        <summary class="faq__question">How much cellular data does it use?</summary>
-        <div class="faq__answer">
-          <p>
-            Each quality option in Settings shows an estimate per hour.
-            The default, Automatic, lowers resolution and frame rate on cellular and in Low Data Mode.
-            On the same Wi-Fi, it doesn't use your plan's data.
-          </p>
-        </div>
-      </details>
-
-      <details class="faq__item">
-        <summary class="faq__question">Is my screen stored anywhere?</summary>
-        <div class="faq__answer">
-          <p>
-            No. Your screen and input travel encrypted only between your Mac and your devices, and never pass through TeamEntry servers.
-            See the <a href="/en/screen-sharing/privacy/">Privacy Policy</a> for details.
-          </p>
-        </div>
-      </details>
-
-      <details class="faq__item">
-        <summary class="faq__question">How do I disconnect or remove a paired device?</summary>
-        <div class="faq__answer">
-          <p>
-            In the Mac menu bar, use <strong>Disconnect</strong> or <strong>Disconnect All</strong> for devices viewing now.
-            Choose <strong>Remove Pairing</strong> in <strong>Paired devices</strong> to cut a device off right away.
-            On iPhone or iPad, use <strong>Delete This Computer</strong> on that Mac.
-          </p>
-        </div>
-      </details>
-    </div>
-  </main>
-
-  <site-footer app="screen-sharing"></site-footer>
+  <p><a href="/en/screen-anywhere/support/">/en/screen-anywhere/support/</a></p>
 </body>
 </html>
