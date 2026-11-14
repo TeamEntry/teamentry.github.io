@@ -254,6 +254,119 @@
   font-size: var(--font-size-caption);
 }
 
+.article {
+  padding: 64px 0 var(--section-spacing);
+}
+
+.article__title {
+  margin: 0 0 8px;
+  font-size: clamp(36px, 5vw, 48px);
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+}
+
+.article__meta {
+  margin: 0 0 40px;
+  color: var(--color-text-tertiary);
+  font-size: 14px;
+}
+
+.article h2 {
+  margin: 56px 0 12px;
+  padding-top: 24px;
+  border-top: 1px solid var(--color-border);
+  font-size: 24px;
+  letter-spacing: -0.02em;
+}
+
+.article h3 {
+  margin: 28px 0 8px;
+  font-size: var(--font-size-body-large);
+}
+
+.article p,
+.article li {
+  color: var(--color-text-body);
+}
+
+.article ul,
+.article ol {
+  padding-left: 1.2em;
+}
+
+.article li + li {
+  margin-top: 6px;
+}
+
+.contact-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin: 32px 0;
+  padding: 24px 28px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-large);
+}
+
+.contact-card__title {
+  margin: 0;
+  font-size: var(--font-size-body-large);
+  font-weight: 600;
+}
+
+.contact-card__description {
+  margin: 0;
+  color: var(--color-text-secondary);
+  font-size: 15px;
+}
+
+.faq {
+  border-top: 1px solid var(--color-border);
+}
+
+.faq__item {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.faq__question {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 20px 0;
+  font-size: var(--font-size-body-large);
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  list-style: none;
+  cursor: pointer;
+}
+
+.faq__question::-webkit-details-marker {
+  display: none;
+}
+
+.faq__question::after {
+  content: "+";
+  color: var(--color-text-tertiary);
+  font-size: 26px;
+  font-weight: 300;
+  line-height: 1;
+  transition: transform 0.2s;
+}
+
+.faq__item[open] .faq__question::after {
+  transform: rotate(45deg);
+}
+
+.faq__answer {
+  padding-bottom: 24px;
+}
+
+.faq__answer > :first-child {
+  margin-top: 0;
+}
+
 .has-js [data-reveal] {
   opacity: 0;
   transform: translateY(24px);
