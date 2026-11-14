@@ -1,8 +1,8 @@
 export const APPS = [
   {
-    id: "screen-sharing",
-    name: { ko: "화면 공유", en: "Screen Sharing" },
-    iconPath: "/screen-sharing/images/icon.png",
+    id: "screen-anywhere",
+    name: { ko: "원격 화면", en: "Screen Anywhere" },
+    iconPath: "/screen-anywhere/images/icon.png",
   },
 ];
 

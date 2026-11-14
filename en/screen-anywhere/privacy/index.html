@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Screen Anywhere Privacy Policy | TeamEntry</title>
+  <meta name="description" content="Privacy Policy for the Screen Anywhere app.">
+  <link rel="alternate" hreflang="ko" href="/screen-anywhere/privacy/">
+  <link rel="icon" href="/screen-anywhere/images/icon.png">
+  <link rel="stylesheet" href="/assets/styles/tokens.css">
+  <link rel="stylesheet" href="/assets/styles/base.css">
+  <link rel="stylesheet" href="/assets/styles/layout.css">
+  <link rel="stylesheet" href="/assets/styles/components.css">
+  <script type="module" src="/assets/scripts/main.js"></script>
+</head>
+<body>
+  <site-header app="screen-anywhere" page="privacy"></site-header>
+
+  <main class="article container container--narrow">
+    <h1 class="article__title">Privacy Policy</h1>
+    <p class="article__meta">Applies to the Screen Anywhere apps for iPhone, iPad and Mac. Effective November 14, 2026.</p>
+
+    <div class="callout">
+      <ul>
+        <li>TeamEntry does not collect personal data through this app.</li>
+        <li>There are no accounts, ads, analytics or tracking.</li>
+        <li>
+          Your screen and input travel encrypted only between your Mac and your devices.
+          They never pass through or get stored on TeamEntry servers.
+        </li>
+      </ul>
+    </div>
+
+    <h2>1. Information the app handles</h2>
+    <h3>Screen, input and terminal</h3>
+    <p>
+      Your Mac's screen, your touch and keyboard input, and terminal content travel directly between the Mac and the devices you paired.
+      Connections use your Tailscale network or a local network you allowed, encrypted with TLS 1.3 over QUIC.
+      TeamEntry never receives or stores this content.
+    </p>
+
+    <h3>Stored only on your devices</h3>
+    <p>The app keeps the following on your devices only. It is removed when you delete the app.</p>
+    <ul>
+      <li>The list, names and certificate fingerprints of paired Macs and devices</li>
+      <li>A device key created in the Secure Enclave and the Mac's server certificate. Both stay in the Keychain and can't be exported.</li>
+      <li>App settings such as quality and network</li>
+      <li>Daily Wi-Fi and cellular data usage</li>
+      <li>Ask AI chats from the Guide tab</li>
+    </ul>
+
+    <h3>Ask AI</h3>
+    <p>Answers in the Guide tab are generated on device by Apple Intelligence. Your questions and answers are not sent to TeamEntry.</p>
+
+    <h2>2. Permissions</h2>
+    <ul>
+      <li>Camera (iPhone, iPad): Used only to scan the pairing QR code on your Mac. Nothing is saved or sent.</li>
+      <li>Face ID (iPhone, iPad): Confirms it's you before the device key is used on each connection. The app only receives the result.</li>
+      <li>Local Network: Finds and connects to Macs and devices on the same Wi-Fi.</li>
+      <li>Screen &amp; System Audio Recording (Mac): Sends the screen to your paired devices.</li>
+      <li>Accessibility (Mac): Delivers touch and keyboard input from your paired devices to the Mac.</li>
+    </ul>
+    <p>You can turn off any permission in Settings at any time. Only the features that need it stop working.</p>
+
+    <h2>3. Third-party services</h2>
+    <p>The app contains no third-party SDKs for ads, analytics or crash reporting.</p>
+    <ul>
+      <li>
+        Tailscale is a separate service you install and sign in to yourself.
+        Information it handles is covered by the <a href="https://tailscale.com/privacy-policy">Tailscale Privacy Policy</a>.
+      </li>
+      <li>
+        App Store downloads and crash reports you choose to share are handled by Apple under the
+        <a href="https://www.apple.com/legal/privacy/">Apple Privacy Policy</a>.
+        TeamEntry only sees anonymous statistics from Apple.
+      </li>
+    </ul>
+
+    <h2>4. Retention and deletion</h2>
+    <p>
+      TeamEntry keeps no user data.
+      Data on your devices is removed when you delete a Mac or a chat in the app, or when you delete the app.
+    </p>
+
+    <h2>5. Children's privacy</h2>
+    <p>The app collects no one's personal data, including children's.</p>
+
+    <h2>6. Changes to this policy</h2>
+    <p>
+      If this policy changes, we'll post the new version here with a new effective date.
+      If how we handle data changes, we'll also note it in the app's update notes.
+    </p>
+
+    <h2>7. Contact</h2>
+    <p>
+      For privacy questions, email
+      <a href="mailto:lgw9898@naver.com?subject=%5BScreen%20Sharing%5D%20Privacy">lgw9898@naver.com</a>.
+    </p>
+  </main>
+
+  <site-footer app="screen-anywhere"></site-footer>
+</body>
+</html>
