@@ -38,7 +38,7 @@
 
 @media (max-width: 760px) {
   :root {
-    --page-gutter: 16px;
+    --page-gutter: 24px;
     --section-spacing: 72px;
   }
 }

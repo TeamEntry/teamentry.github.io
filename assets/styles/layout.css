@@ -117,3 +117,9 @@ site-footer {
     display: none;
   }
 }
+
+@media (max-width: 360px) {
+  .site-header__nav {
+    gap: 10px;
+  }
+}
