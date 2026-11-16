@@ -256,7 +256,8 @@
 }
 
 .article {
-  padding: 64px 0 var(--section-spacing);
+  padding-top: 64px;
+  padding-bottom: var(--section-spacing);
 }
 
 .article__title {
@@ -272,7 +273,7 @@
   font-size: 14px;
 }
 
-.article h2 {
+.article > h2 {
   margin: 56px 0 12px;
   padding-top: 24px;
   border-top: 1px solid var(--color-border);
