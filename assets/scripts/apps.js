@@ -1,7 +1,7 @@
 export const APPS = [
   {
     id: "screen-anywhere",
-    name: { ko: "원격 화면", en: "Screen Anywhere" },
+    name: { ko: "RemoteScreen", en: "RemoteScreen" },
     iconPath: "/screen-anywhere/images/icon.png",
   },
 ];
