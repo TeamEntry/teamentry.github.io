@@ -4,6 +4,11 @@ export const APPS = [
     name: { ko: "RemoteScreen", en: "RemoteScreen" },
     iconPath: "/screen-anywhere/images/icon.png",
   },
+  {
+    id: "kiku",
+    name: { ko: "키꾸", en: "Kiku" },
+    iconPath: "/kiku/images/icon.png",
+  },
 ];
 
 export function findApp(appId) {
